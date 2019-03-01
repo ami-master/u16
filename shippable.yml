@@ -239,11 +239,17 @@ build:
     - javac -version
     - source /usr/local/rvm/scripts/rvm
     - ruby --version
-    - gcloud version
-    - aws --version
-    - packer --version
+    - gcloud version #233.0.0
+    - aws --version #1.16.102
+    - eb --version #3.14.11 
+    - jfrog --version #1.24.1
+    - packer --version #1.3.4
     - jq --version
-    - kubectl version --client
+    - kubectl version --client #1.13.2
+    - ansible --version #2.7.7
+    - terraform --version #0.11.11
+    - apt search azure-cli
+    - az --version #2.0.58
     - docker --version
     - docker pull shippabledocker/sample_node_pvt:ecr
     - if [ $TEST1 == "EnvFoo" ]; then echo 'success'; else testfail; fi
